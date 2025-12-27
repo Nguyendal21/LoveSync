@@ -10,7 +10,7 @@ const ThemeEffects: React.FC<ThemeEffectsProps> = ({ theme }) => {
 
   useEffect(() => {
     const count = 30; // Number of particles
-    const newParticles = [];
+    const newParticles: React.ReactNode[] = [];
 
     let content = '';
     let className = 'weather-particle fall-animation';
