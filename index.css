@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Weather Effects */
+.weather-particle {
+  position: fixed;
+  top: -10vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+}
+
+.fall-animation {
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Specific styles */
+.snowflake { color: #fff; text-shadow: 0 0 5px #a5f3fc; }
+.leaf { color: #d97706; text-shadow: 0 0 2px #fcd34d; }
+.flower { color: #f472b6; text-shadow: 0 0 2px #fbcfe8; }
